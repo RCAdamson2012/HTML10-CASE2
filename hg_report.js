@@ -14,9 +14,9 @@
 
 // Create the game report using variables from hg_product.js
 var gameReport =
-   "<h1>" + itemTitle + "</h1> +
+   "<h1>" + itemTitle + "</h1>" +
    "<h2>By: " + itemManufacturer + "</h2>" +
-   "<img src='hg_" + ItemID + ".png' alt='" + itemID + "' id='gameImg' />" +
+   "<img src='hg_" + itemID + ".png' alt='" + itemID + "' id='gameImg' />" +
    "<table>" +
    "<tr><th>Product ID</th><td>" + itemID + "</td></tr>" +
    "<tr><th>List Price</th><td>" + itemPrice + "</td></tr>" +
@@ -47,7 +47,7 @@ var ratingsAvg = ratingsSum / ratingsCount;
 // Create customer review report heading
 var ratingReport =
    "<h1>Customer Reviews</h1>" +
-   "<h2>" + ratingsAvg.toFixed(2) + " out of 5 stars (" + ratingsCount + " reviews)</h2>";
+   "<h2>" + ratingsAvg + " out of 5 stars (" + ratingsCount + " reviews)</h2>";
 
 // Display the first three customer reviews
 for (var i = 0; i < 3; i++) {
